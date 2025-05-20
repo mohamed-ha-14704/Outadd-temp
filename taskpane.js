@@ -10,7 +10,7 @@ function main(event) {
     persistent: false
   });
   console.log("send ready");
-  event.completed({ allowEvent: false }); // allow sending
+  event.completed({ allowEvent: true }); // allow sending
 }
 function mainHandleAttachments(event) {
     try {
