@@ -3,12 +3,6 @@ Office.onReady(() => {
 });
 
 function main(event) {
-  Office.context.mailbox.item.notificationMessages.addAsync("onsend-msg", {
-    type: "informationalMessage",
-    message: "Popup before sending email!",
-    icon: "icon16",
-    persistent: false
-  });
   console.log("send ready");
   event.completed({ allowEvent: true }); // allow sending
 }
