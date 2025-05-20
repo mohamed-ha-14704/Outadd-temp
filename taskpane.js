@@ -9,7 +9,7 @@ function main(event) {
     icon: "icon16",
     persistent: false
   });
-  event.completed({ allowEvent: false }); // allow sending
+  event.completed({ allowEvent: true }); // allow sending
 }
 function mainHandleAttachments(event) {
     try {
